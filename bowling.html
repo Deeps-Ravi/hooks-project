@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bowling | HOOKS Entertainment Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="./index.html" class="logo">HOOKS</a>
+        <div class="nav-links">
+          <a href="./index.html">HOME</a>
+          <a href="./bowling.html" class="active">BOWLING</a>
+          <a href="./arcade.html">ARCADE</a>
+          <a href="./gallery.html">GALLERY</a>
+          <a href="./contact.html">VISIT US</a>
+        </div>
+        <a href="./contact.html#book" class="btn btn-primary nav-cta">BOOK / ENQUIRE</a>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="./index.html">HOME</a>
+        <a href="./bowling.html">BOWLING</a>
+        <a href="./arcade.html">ARCADE</a>
+        <a href="./gallery.html">GALLERY</a>
+        <a href="./contact.html">VISIT US</a>
+        <a href="./contact.html#book" class="btn btn-primary mt-4">BOOK / ENQUIRE</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero hero-sub" style="background-image: url('https://images.unsplash.com/photo-1599388305018-028f80406df6?q=80&w=2000&auto=format&fit=crop');">
+      <div class="hero-overlay"></div>
+      <div class="hero-content fade-in-up">
+        <h1 class="hero-title">LET THE GAMES BEGIN.</h1>
+        <p class="hero-subtitle">Step onto the lane. Pick your ball. Make your strike.</p>
+      </div>
+    </header>
+
+    <!-- The Bowling Experience -->
+    <section class="section text-center">
+      <div class="container fade-in-scroll">
+        <h2 class="section-title mb-5">THE BOWLING EXPERIENCE</h2>
+        <p class="section-desc mx-auto mb-5">Experience state-of-the-art lanes, dynamic lighting, and an electric atmosphere that makes every game memorable. Whether you're a pro or playing for the first time, HOOKS is the place to be.</p>
+        
+        <div class="steps-grid">
+          <div class="step-card glass-card">
+            <div class="step-num">01</div>
+            <h3 class="card-title">PICK YOUR BALL</h3>
+            <p class="card-desc">Choose your preferred bowling ball and get ready.</p>
+          </div>
+          <div class="step-card glass-card">
+            <div class="step-num">02</div>
+            <h3 class="card-title">TAKE YOUR AIM</h3>
+            <p class="card-desc">Step up, line up your shot, and focus on the pins.</p>
+          </div>
+          <div class="step-card glass-card">
+            <div class="step-num">03</div>
+            <h3 class="card-title">MAKE YOUR STRIKE</h3>
+            <p class="card-desc">Knock down the pins and celebrate your victory.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Score Visual Demo -->
+    <section class="section bg-darker text-center">
+      <div class="container fade-in-scroll">
+        <h2 class="mb-4">Interactive Scoreboard (Demo)</h2>
+        <div class="scoreboard-demo glass-card mx-auto">
+          <div class="score-row header">
+            <div>PLAYER</div>
+            <div>FRAME</div>
+            <div>SCORE</div>
+          </div>
+          <div class="score-row player">
+            <div class="text-neon-blue">ALEX</div>
+            <div>9</div>
+            <div>142</div>
+          </div>
+          <div class="score-row player">
+            <div class="text-neon-pink">JORDAN</div>
+            <div>9</div>
+            <div>128</div>
+          </div>
+        </div>
+        <p class="text-sm text-muted mt-3">*Visual demo. Not the actual HOOKS scoring system.</p>
+      </div>
+    </section>
+
+    <!-- Perfect For -->
+    <section class="section">
+      <div class="container fade-in-scroll">
+        <h2 class="section-title text-center mb-5">PERFECT FOR</h2>
+        <div class="cards-grid">
+          <div class="glass-card text-center py-4"><h3>Friends</h3></div>
+          <div class="glass-card text-center py-4"><h3>College Groups</h3></div>
+          <div class="glass-card text-center py-4"><h3>Couples</h3></div>
+          <div class="glass-card text-center py-4"><h3>Birthday Hangouts</h3></div>
+          <div class="glass-card text-center py-4"><h3>Casual Outings</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section bg-darker text-center">
+      <div class="container fade-in-scroll">
+        <h2 class="section-title mb-4">CURRENT PRICING</h2>
+        <p class="text-xl mb-5">Contact HOOKS for the latest bowling rates.</p>
+        <a href="tel:08825636923" class="btn btn-primary glow text-lg px-5 py-3">CALL HOOKS: 088256 36923</a>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="section text-center">
+      <div class="container fade-in-scroll">
+        <h2 class="section-title text-neon-pink mb-4">WHO'S GETTING THE FIRST STRIKE?</h2>
+        <a href="./contact.html#book" class="btn btn-outline text-lg mt-3">BOOK A LANE NOW</a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="footer-brand">
+          <h2 class="logo">HOOKS</h2>
+          <p>Bowling • Arcade • Photobooth • Food</p>
+        </div>
+        <div class="footer-info">
+          <h3>Contact</h3>
+          <p>1A, Gate, Opp. to VIT Road,<br>Vaibhav Nagar, Katpadi,<br>Vellore, Tamil Nadu 632014</p>
+          <p><a href="tel:08825636923">📞 088256 36923</a></p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="./bowling.html">Bowling</a>
+          <a href="./arcade.html">Arcade</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Visit Us</a>
+        </div>
+        <div class="footer-social">
+          <h3>Connect</h3>
+          <a href="https://instagram.com/hooks_vellore" target="_blank" class="social-link">Instagram</a>
+          <a href="https://maps.google.com/?q=HOOKS+Vellore+Tamil+Nadu+632014" target="_blank" class="btn btn-outline btn-sm mt-3">Google Maps</a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-5 pt-4 border-t border-dark">
+        <p class="text-sm text-muted">&copy; 2026 HOOKS. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

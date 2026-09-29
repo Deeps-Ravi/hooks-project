@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Visit Us | HOOKS Entertainment Center</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style.css">
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="./index.html" class="logo">HOOKS</a>
+        <div class="nav-links">
+          <a href="./index.html">HOME</a>
+          <a href="./bowling.html">BOWLING</a>
+          <a href="./arcade.html">ARCADE</a>
+          <a href="./gallery.html">GALLERY</a>
+          <a href="./contact.html" class="active">VISIT US</a>
+        </div>
+        <a href="#book" class="btn btn-primary nav-cta">BOOK / ENQUIRE</a>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="mobile-menu">
+        <a href="./index.html">HOME</a>
+        <a href="./bowling.html">BOWLING</a>
+        <a href="./arcade.html">ARCADE</a>
+        <a href="./gallery.html">GALLERY</a>
+        <a href="./contact.html">VISIT US</a>
+        <a href="#book" class="btn btn-primary mt-4">BOOK / ENQUIRE</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero hero-sub" style="background-image: url('https://images.unsplash.com/photo-1550993540-3512b9d2f2d9?q=80&w=2000&auto=format&fit=crop');">
+      <div class="hero-overlay" style="background: rgba(10, 10, 14, 0.8);"></div>
+      <div class="hero-content fade-in-up">
+        <h1 class="hero-title text-neon-pink">COME FIND US.</h1>
+      </div>
+    </header>
+
+    <!-- Location Section -->
+    <section class="section">
+      <div class="container fade-in-scroll">
+        <div class="split-layout">
+          <div class="split-content">
+            <h2 class="section-title mb-4">LOCATION</h2>
+            <div class="location-details glass-card p-5 mb-4">
+              <p class="text-xl mb-3">📍 <strong>HOOKS</strong></p>
+              <p>1A, Gate, Opp. to VIT Road,<br>Vaibhav Nagar,<br>Katpadi, Vellore,<br>Tamil Nadu 632014</p>
+              <p class="mt-3">📞 <a href="tel:08825636923" class="text-link">088256 36923</a></p>
+              <p class="mt-3">🕚 <strong>Opening information:</strong><br>Opens around 11:00 AM<br><span class="text-sm text-muted">Please contact HOOKS for current operating hours.</span></p>
+            </div>
+            <div class="hero-actions">
+              <a href="https://maps.google.com/?q=HOOKS+Vellore+Tamil+Nadu+632014" target="_blank" class="btn btn-primary glow">GET DIRECTIONS</a>
+              <a href="tel:08825636923" class="btn btn-outline">CALL NOW</a>
+            </div>
+          </div>
+          <div class="split-image">
+            <div class="map-container glass-card p-2 rounded-img">
+              <!-- Using a static map placeholder since embedding iframe requires API keys or specific embed URLs -->
+              <div class="map-placeholder" style="background: #1a1a24; height: 400px; display: flex; align-items: center; justify-content: center; flex-direction: column; border-radius: 12px;">
+                <div style="font-size: 3rem; margin-bottom: 1rem;">📍</div>
+                <h3>Map Area</h3>
+                <p class="text-muted">Plus Code: X593+5X Vellore, Tamil Nadu</p>
+                <a href="https://maps.google.com/?q=HOOKS+Vellore+Tamil+Nadu+632014" target="_blank" class="btn btn-sm btn-outline mt-3">Open in Google Maps</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Plan Your Visit -->
+    <section class="section bg-darker text-center">
+      <div class="container fade-in-scroll">
+        <h2 class="section-title mb-5">PLAN YOUR VISIT</h2>
+        <div class="plan-steps">
+          <div class="plan-step">Choose your people</div>
+          <div class="plan-step arrow">↓</div>
+          <div class="plan-step">Head to HOOKS</div>
+          <div class="plan-step arrow">↓</div>
+          <div class="plan-step">Bowl & play</div>
+          <div class="plan-step arrow">↓</div>
+          <div class="plan-step">Capture the memories</div>
+          <div class="plan-step arrow">↓</div>
+          <div class="plan-step">Grab a bite</div>
+          <div class="plan-step arrow">↓</div>
+          <div class="plan-step highlight">Repeat</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section id="book" class="section">
+      <div class="container fade-in-scroll">
+        <div class="form-container glass-card mx-auto p-5" style="max-width: 600px;">
+          <h2 class="text-center mb-4">ENQUIRE NOW</h2>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+            </div>
+            <div class="form-group">
+              <label for="people">Number of people</label>
+              <input type="number" id="people" name="people" min="1" required placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="date">Preferred date</label>
+              <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message (Optional)</label>
+              <textarea id="message" name="message" rows="4" placeholder="Any special requests?"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary glow w-100 mt-4">ENQUIRE NOW</button>
+            <div id="formSuccess" class="form-success mt-3" style="display: none; color: #4ade80; text-align: center;">
+              Thanks for your enquiry! We will get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="footer-brand">
+          <h2 class="logo">HOOKS</h2>
+          <p>Bowling • Arcade • Photobooth • Food</p>
+        </div>
+        <div class="footer-info">
+          <h3>Contact</h3>
+          <p>1A, Gate, Opp. to VIT Road,<br>Vaibhav Nagar, Katpadi,<br>Vellore, Tamil Nadu 632014</p>
+          <p><a href="tel:08825636923">📞 088256 36923</a></p>
+        </div>
+        <div class="footer-links">
+          <h3>Quick Links</h3>
+          <a href="./bowling.html">Bowling</a>
+          <a href="./arcade.html">Arcade</a>
+          <a href="./gallery.html">Gallery</a>
+          <a href="./contact.html">Visit Us</a>
+        </div>
+        <div class="footer-social">
+          <h3>Connect</h3>
+          <a href="https://instagram.com/hooks_vellore" target="_blank" class="social-link">Instagram</a>
+          <a href="https://maps.google.com/?q=HOOKS+Vellore+Tamil+Nadu+632014" target="_blank" class="btn btn-outline btn-sm mt-3">Google Maps</a>
+        </div>
+      </div>
+      <div class="footer-bottom text-center mt-5 pt-4 border-t border-dark">
+        <p class="text-sm text-muted">&copy; 2026 HOOKS. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
